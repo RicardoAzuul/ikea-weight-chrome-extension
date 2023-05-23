@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Ikea Shopping Cart Weight",
+    "description": "Shows the weight of your Ikea shopping cart",
+    "version": "1.01",
+    "icons": {
+        "128": "images/weight.png"
+      },
+    "action": {
+      "default_popup": "hello.html",
+      "default_icon": "images/weight.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://www.ikea.com/nl/nl/shoppingcart/"
+          ]
+        }
+      ]
+  }
